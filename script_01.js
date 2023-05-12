@@ -11,20 +11,42 @@
 4. Ausgabe in Konsole : chenk !
 */
 
+
+
 // Konstanten
 const ERROR_STR_DIV = "Division durch 0 nicht möglich!";
 const ERROR_STR_GEN = "Irgendetwas ging schief!"
 
+startApp()
+function startApp() {
+	output(calculator(getNum(), getNum(), getOp()));
+
+
+
+}
+function getNum() {
+	return parseInt(prompt("Zahl?"));
+}
+function getOp() {
+	return prompt("Operator?");	
+}	
+
+
+
+
+
+
+
 
 // module: calculator | tests:
 // agreement : "+","-","*",":","/"
-output(calculator(3,2,"+"));
-output(calculator(3,2,"-"));
-output(calculator(3,2,"*"));
-output(calculator(3,2,":"));
-output(calculator(3,2,"/"));
-output(calculator(3,0,"/"));
-output(calculator(3,2,"#?!"));
+// output(calculator(3,2,"+"));
+// output(calculator(3,2,"-"));
+// output(calculator(3,2,"*"));
+// output(calculator(3,2,":"));
+// output(calculator(3,2,"/"));
+// output(calculator(3,0,"/"));
+// output(calculator(3,2,"#?!"));
 function calculator(a,b,op) {
 switch (op) {
 
@@ -84,17 +106,14 @@ function subtract(a,b) {
 	
 }
 
-// module: addition a + b |  test:
-function add(a,b) {
 
-}
 
 
 // output(add(2,2));
 // output(add(2,-2));
 // output(add(2,0));
 function add(a,b) {
-	// return a + b;	
+	return a + b;	
 }
 
 
