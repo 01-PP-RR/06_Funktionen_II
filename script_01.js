@@ -27,6 +27,8 @@ function startApp() {
 function getNum() {
 	return parseInt(prompt("Zahl?"));
 }
+
+// output(getOp()); /// Funktions TestS
 function getOp() {
 	return prompt("Operator?");	
 }	
